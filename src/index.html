@@ -1,36 +1,45 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modul 323 - Klassisches CSS</title>
-    <!-- CSS Einbindung -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modul 323 - Tailwind</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
 
-    <header>
-        <h1>Meine Projektwebsite</h1>
-    </header>
+<body class="m-0 font-sans text-zinc-900 bg-white">
 
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Über uns</a></li>
-            <li><a href="#">Kontakt</a></li>
-        </ul>
-    </nav>
+  <header class="border-b border-zinc-200 px-5 py-4">
+    <h1 class="text-2xl font-bold">Meine Projektwebsite</h1>
+  </header>
 
-    <main>
-        <h2>Willkommen auf der Startseite</h2>
-        <p>Das ist ein Hamster Museum</p>
-        <img src="hamster.jpg" alt="Hamster" style="max-width: 100%;">
-    </main>
+  <nav class="border-b border-zinc-200 px-5 py-3">
+    <ul class="m-0 p-0 list-none flex gap-4">
+      <li><a class="text-blue-600 hover:underline" href="#">Home</a></li>
+      <li><a class="text-blue-600 hover:underline" href="#">Über uns</a></li>
+      <li><a class="text-blue-600 hover:underline" href="#">Kontakt</a></li>
+    </ul>
+  </nav>
 
-    <footer>
-        <p>&copy; coole Modul</p>
-    </footer>
+  <main class="px-5 py-6 max-w-3xl">
+    <h2 class="text-xl font-bold mb-2">Willkommen auf der Startseite</h2>
 
-    <script src="bundle.js"></script>
+    <p class="text-zinc-700 mb-4">
+      Das ist Tailwidn
+    </p>
+
+    <img
+      src="hamster.jpg"
+      alt="Hamster"
+      class="max-w-full h-auto rounded-xl border border-zinc-200"
+    />
+  </main>
+
+  <footer class="border-t border-zinc-200 px-5 py-4 text-center text-zinc-700">
+    <p class="m-0"> coole modul</p>
+  </footer>
+
+  <script src="bundle.js"></script>
 </body>
 </html>
